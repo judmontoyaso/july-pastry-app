@@ -1,0 +1,1158 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedorFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-login {
+  background-color: #edc0bc;
+  padding: 15px;
+  border-radius: 5%;
+  box-shadow: #000000 5%;
+}
+.formulario {
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  border: pink;
+}
+
+.labelForm {
+  width: 400px;
+  font-weight: bold;
+  display: inline-block;
+}
+.labelcheck {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.inputForm {
+  width: 400px;
+  padding: 8px 10px;
+  border: 1px solid #a3a2a2;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%);
+  margin: 20px;
+}
+
+.inputFormCantidad {
+  width: 80px;
+  padding: 8px 10px;
+  border: 1px solid #a3a2a2;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%);
+  margin: 20px;
+}
+
+.inputFormCantidad:focus {
+  outline: none !important;
+  border: 1px solid #edc0bc;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.inputFormPrueba {
+  padding: 8px 10px;
+  border: 1px solid #a3a2a2;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%);
+  margin: 20px;
+}
+
+.inputFormPrueba:focus {
+  outline: none !important;
+  border: 1px solid #edc0bc;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.inputcheck {
+  width: 90px;
+  padding: 8px 10px;
+  border: 1px solid #a3a2a2;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%);
+  margin: 20px;
+}
+
+.inputForm:focus {
+  outline: none !important;
+  border: 1px solid #edc0bc;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.selectForm {
+  width: 400px;
+  padding: 8px 10px;
+  border: 1px solid #a3a2a2;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  margin: 20px;
+}
+
+.selectForm:focus {
+  outline: none !important;
+  border: 1px solid #edc0bc;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.buttonForm {
+  width: 20%;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border: 1px solid#EDC0BC;
+  border-radius: 5px;
+  display: block;
+  color: #775c5a;
+  background-color: #ffe5d9;
+}
+
+.buttonForm:hover {
+  cursor: pointer;
+  background-color: #edc0bc;
+}
+
+.mensaje {
+  margin-top: 0.5rem /* 8px */;
+  margin-bottom: 0.5rem /* 8px */;
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  border-left-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
+  color: rgb(224, 115, 134);
+}
+
+.p {
+  font-weight: bold;
+}
+
+input[type="checkbox"]:checked + label {
+  color: green;
+}
+
+/** CSS SIDEBAR DIEGO**/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5;
+}
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background: rgba(239, 182, 178, 0.897);
+  left: -200px;
+  transition: all 500ms linear;
+}
+.sidebar a {
+  color: black;
+}
+
+.sidebar.active {
+  left: 0px;
+}
+
+.sidebar ul li {
+  color: black;
+  list-style: none;
+  padding: 15px 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  text-align: center;
+  font-weight: 600;
+  background: rgb(239, 182, 178);
+  cursor: pointer;
+}
+
+.salir {
+  color: black;
+  list-style: none;
+  padding: 15px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  text-align: center;
+  background: rgba(239, 182, 178, 0.8);
+  font-weight: 600;
+}
+
+.sidebar .active {
+  border-radius: 0 80px 80px 0;
+  box-shadow: 0px 0px 0px 2px rgba(239, 182, 178, 0.8);
+}
+.sidebar ul li:hover {
+  border-radius: 0 80px 80px 0;
+  box-shadow: 0px 0px 0px 2px rgba(239, 182, 178, 0.8);
+}
+.logo {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+.icono {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 30px;
+  margin-top: 0px;
+}
+.close {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 30px;
+  margin-top: 0px;
+}
+.sidebar .toggle-btn {
+  position: absolute;
+  left: 280px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+/** CSS SIDEBAR DIEGO**/
+
+/** css juliana*/
+
+.DiseñoTitulo {
+  font-size: 400%;
+  font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: #775c5a;
+}
+
+/** css Cristian **/
+
+.bodylogin {
+  background-color: #fffff9;
+}
+
+.login {
+  font-family: "Roboto", sans-serif;
+  width: 440px;
+  height: 250px;
+  background: #fffff9;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login h1 {
+  color: #5a4442;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login p {
+  text-align: center;
+  opacity: 0.75;
+  color: #000000;
+}
+
+.login label {
+  margin: 0;
+  font-weight: bold;
+  color: #000000;
+  opacity: 0.75;
+  display: block;
+}
+
+.login input {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #ffffff;
+  height: 30px;
+  color: #000;
+  font-size: 14px;
+}
+
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 35px;
+  background: #ffe5d9;
+  color: #5a4442;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.login input[type="submit"]:hover {
+  cursor: pointer;
+  color: #000;
+  box-shadow: 3px 3px 3px #5a4442;
+}
+
+.logo .logop {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  top: 20px;
+  left: 564px;
+}
+
+a.gboton {
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
+  color: black;
+  display: block;
+  font-weight: bold;
+  height: 29px;
+  width: 180px;
+  text-align: center;
+  padding: 0 8px;
+  font: 13px/27px Roboto, sans-serif;
+  cursor: hand;
+  margin-top: 480px;
+  margin-left: 535px;
+}
+
+.iconoG {
+  height: 100%;
+}
+
+#pie {
+  height: 50px;
+  line-height: 50px;
+  background: #edc0bc;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.recuperacion {
+  height: 50px;
+  line-height: 50px;
+  background: #000000;
+  opacity: 0.5;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/** CSS Modificar ventas**/
+
+.div1 {
+  font-family: "Roboto", sans-serif;
+  width: 35%;
+  height: 20%;
+  background: #fffff9;
+  color: #775c5a;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.div2 {
+  font-family: "Roboto", sans-serif;
+  width: 15%;
+  height: 17%;
+  background: #fffff9;
+  color: #775c5a;
+  position: absolute;
+  top: 27%;
+  left: 40%;
+}
+
+.div2 .type {
+  width: 100%;
+}
+
+.div3 {
+  font-family: "Roboto", sans-serif;
+  width: 35%;
+  height: 15%;
+  background: #fffff9;
+  color: #775c5a;
+  position: absolute;
+  top: 36%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.div4 {
+  font-family: "Roboto", sans-serif;
+  width: 15%;
+  height: 17%;
+  background: #fffff9;
+  color: #775c5a;
+  position: absolute;
+  top: 27.5%;
+  left: 75%;
+}
+
+.estado {
+  font-family: "Roboto", sans-serif;
+  width: 65%;
+  height: 10%;
+  background: #fffff9;
+  color: #775c5a;
+  position: absolute;
+  top: 83%;
+  left: 28%;
+}
+.estado [for="venta"] {
+  height: 100%;
+}
+
+table {
+  margin-top: 280px;
+  margin-left: 27%;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid rgb(194, 192, 192);
+  padding-left: 10px;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 212, 219);
+  opacity: 0.8;
+}
+
+tr,
+td {
+  border: 1px solid #ffe5d9;
+  padding-left: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/** CSS Modificar ventas/
+/** CSS tabla DE PRODUCTOS DANIELA**/
+
+.buscadorEspecifico {
+  background-color: #e9e9e9;
+  color: silver;
+  border: 0px;
+  padding: 5px 15px;
+  width: 600px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px gray;
+  margin-top: 5%;
+}
+.buscadorEspecifico:hover {
+  cursor: text;
+  background-color: whitesmoke;
+}
+
+.botonNuevoPro {
+  margin-right: 10px;
+  background-color: #ffe5d9;
+  color: #775c5a;
+  border: 1px;
+  padding: 5px 5px;
+  width: 200px;
+  height: 22px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgb(167, 165, 165);
+  margin-top: 5%;
+}
+.botonNuevoPro:hover {
+  cursor: pointer;
+  background-color: #efb6b2;
+}
+
+.botones input[type="submit"] {
+  width: 80px;
+  height: 40px;
+  background: #ffe5d9;
+  box-shadow: 3px 3px 3px #5a4442;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+table {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid rgb(194, 192, 192);
+  padding-left: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 212, 219);
+}
+
+tr,
+td {
+  border: 1px solid rgb(194, 192, 192);
+  padding-left: 15px;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+*/ .buscar {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.buscar:focus-within {
+  border: 1px solid rgb(204, 202, 204);
+}
+
+.buscar > input {
+  outline: none;
+  border: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Diseño {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  position: relative;
+  left: 900px;
+}
+
+.Diseño > li {
+  align-items: center;
+  display: block;
+}
+.nuevaVentBoton {
+  background-color: #f2c5c1;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  position: relative;
+  top: 15px;
+  left: 8px;
+}
+.nuevaVentBoton:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px #f2c5c1;
+  transform: scale(1.1);
+}
+
+.modificarBoton {
+  background-color: #f2c5c1;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.modificarBoton:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px #f2c5c1;
+  transform: scale(1.1);
+}
+
+.selección {
+  background-color: #f2c5c1;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.ContenedorconMargen {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid palevioletred;
+  padding: 10px;
+}
+
+.contenedor {
+  display: inline-flex;
+  position: relative;
+  left: 200px;
+  top: 70px;
+}
+
+.ContenedorconMargen {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+}
+/** CSS tabla DE PRODUCTOS DANIELA**/
+
+/** CSS DASHBOARD DIEGO**/
+main {
+  /*max-width: 1500px;*/
+  margin-top: 0px;
+  min-height: 90vh;
+  padding: 1rem 3rem;
+}
+
+.dash-title {
+  margin-top: 11rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.dash-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem;
+}
+
+.card-single {
+  background: #ffe5d9;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.card-single img {
+  width: 50px;
+}
+
+.card-body {
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-body span {
+  font-size: 1.5rem;
+  color: #000000;
+  padding-right: 1.4rem;
+}
+
+.card-body h5 {
+  color: black;
+  font-size: 3rem;
+}
+
+.card-body h4 {
+  color: var(--color-dark);
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+}
+
+.card-footer {
+  padding: 0.2rem 1rem;
+  background: #ffe5d9;
+  border-radius: 20px;
+}
+
+.card-footer a {
+  color: black;
+  background: #ffe5d9;
+}
+
+.resumen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-column-gap: 1.5rem;
+}
+
+.activity-card,
+.summary-card,
+.bday-card {
+  background: #ffe5d9;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.summary-single img {
+  width: 50px;
+}
+
+.activity-card h3 {
+  color: var(--text-grey);
+  margin: 2rem;
+  background: #ffe5d9d3;
+}
+
+.activity-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-card thead {
+  background: #efefef;
+  text-align: left;
+}
+
+th,
+td {
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  color: var(--color-dark);
+}
+
+td {
+  font-size: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fafc;
+}
+
+.badge {
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.badge.exitoso {
+  background: #def7ec;
+  color: var(--main-color);
+}
+
+.badge.pendiente {
+  background: #f08205;
+  color: rgb(255, 255, 255);
+}
+
+.td-team {
+  display: flex;
+  align-items: center;
+}
+
+.summary-card {
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.summary-card h3 {
+  color: black;
+  margin: 2rem;
+}
+
+.summary-single {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.summary-single span {
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1rem;
+}
+
+.summary-single h5 {
+  color: var(--main-color);
+  font-size: 1.6rem;
+}
+
+.summary-single small {
+  font-weight: 500;
+  color: gray;
+}
+
+.bday-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  padding-top: 0px;
+}
+.table-responsive table {
+  margin-top: 0px;
+}
+
+/**FORMULARIO VENTAS**/
+body {
+  background: #f5f5f5;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 1rem;
+  margin-right: auto;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+}
+.field label {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+.field input {
+  font-size: 20px;
+  height: 2.2rem;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(121, 121, 121, 0.801);
+  border-color: rgba(104, 104, 104, 0);
+}
+.field input.fecha {
+  background: #ffe5d9;
+}
+
+.field button {
+  background-color: #ffe5d9;
+
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(121, 121, 121, 0.801);
+  border-color: rgba(104, 104, 104, 0);
+}
+
+.field button a {
+  color: black;
+  font-family: 400;
+  font-size: 20px;
+}
+.field input.short {
+  max-width: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field input.boton {
+  margin-top: 60px;
+  padding: 1px;
+  background-color: #ffe5d9;
+  width: 200px;
+  margin-right: -500px;
+  margin-left: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+/** CSS SIDEBAR DIEGO**/
+
+.contenedorBotonesgrises {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.buscadoresGrises {
+  background-color: #e9e9e9;
+  color: silver;
+  border: 0px;
+  padding: 5px 15px;
+  width: 500px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px gray;
+}
+
+.buscadoresGrises:hover {
+  cursor: text;
+  background-color: whitesmoke;
+}
+
+.botonesGrises {
+  margin-right: 10px;
+  background-color: #ffe5d9;
+  color: #775c5a;
+  border: 1px;
+  padding: 5px 5px;
+  width: 200px;
+  height: 22px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgb(167, 165, 165);
+}
+.botonesGrises:hover {
+  cursor: pointer;
+  shape-outside: 4px 4px #efb6b2;
+  background-color: #edc0bc;
+}
+
+.tarjetasProductos {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color: #ffe5d9;
+  display: flex;
+  justify-content: space-between;
+  height: 280px;
+  box-shadow: 2px 4px silver;
+  border-radius: 20px;
+}
+.tarjetasProductos:hover {
+  cursor: pointer;
+  shape-outside: 4px 4px #efb6b2;
+  background-color: #edc0bc;
+}
+
+.tarjetasProductosNoDispo {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  height: 280px;
+  box-shadow: 2px 4px silver;
+  border-radius: 20px;
+}
+
+.contenedorTarjetasPro {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.elementos1 {
+  display: flex;
+  text-align: center;
+  justify-items: left;
+  width: 260px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+}
+
+.elementos2 {
+  color: #775c5a;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  height: 260px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
+
+.contenidoProducto {
+  display: grid;
+  justify-items: left;
+  height: 100%;
+}
+.identificador {
+  display: flex;
+  justify-content: right;
+  text-align: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  height: 60px;
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 200px;
+}
+
+/** CSS tabla DE usuarios DANIELA**/
+
+.buscadorEspecificoUsu {
+  background-color: #e9e9e9;
+  color: silver;
+  border: 0px;
+  padding: 5px 15px;
+  width: 600px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px gray;
+  margin-top: 5%;
+}
+.buscadorEspecificoUsu:hover {
+  cursor: text;
+  background-color: whitesmoke;
+}
+
+.botonNuevoUsu {
+  margin-right: 10px;
+  background-color: #ffe5d9;
+  color: #775c5a;
+  border: 1px;
+  padding: 5px 5px;
+  width: 200px;
+  height: 22px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgb(167, 165, 165);
+  margin-top: 5%;
+}
+.botonNuevoUsu:hover {
+  cursor: pointer;
+  background-color: #efb6b2;
+}
+
+/** CSS tabla DE usuarios DANIELA**/
+
+/** CSS tabla DE clientes DANIELA**/
+
+.buscadorEspecificoCliente {
+  background-color: #e9e9e9;
+  color: silver;
+  border: 0px;
+  padding: 5px 15px;
+  width: 600px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px gray;
+  margin-top: 5%;
+}
+.buscadorEspecificocliente:hover {
+  cursor: text;
+  background-color: whitesmoke;
+}
+
+.botonNuevoCliente {
+  margin-right: 10px;
+  background-color: #ffe5d9;
+  color: #775c5a;
+  border: 1px;
+  padding: 5px 5px;
+  width: 200px;
+  height: 22px;
+  border-radius: 10px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  box-shadow: 0px 4px 4px rgb(167, 165, 165);
+  margin-top: 5%;
+}
+.botonNuevoCliente:hover {
+  cursor: pointer;
+  background-color: #efb6b2;
+}
+
+/** CSS tabla DE clientes DANIELA**/
+
+.tabla th,
+.tabla td {
+  padding: 8px;
+}
+.tabla th {
+  background-color: pink;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.tabla tr:nth-child(even) {
+  background-color: rgb(248, 232, 235);
+}
+.tabla tr:hover {
+  background-color: rgb(247, 202, 208);
+  cursor: pointer;
+}
+
+.tablaPrueba th,
+.tablaPrueba td {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid rgb(201, 195, 195);
+}
+.tablaPrueba th {
+  background-color: pink;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.tablaPrueba tr:nth-child(even) {
+  background-color: rgb(248, 232, 235);
+}
+.tablaPrueba tr:hover {
+  background-color: rgb(247, 202, 208);
+  cursor: pointer;
+}
