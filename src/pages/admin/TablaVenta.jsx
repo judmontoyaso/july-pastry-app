@@ -60,7 +60,7 @@ const TablaVenta = () => {
 
   useEffect(() => {
     setVentasFiltradas(
-      ventas.filter((elemento) => {
+      ventas.reverse().filter((elemento) => {
         return JSON.stringify(elemento)
           .toLowerCase()
           .includes(busqueda.toLowerCase());

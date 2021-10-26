@@ -141,7 +141,7 @@ const FilaUsuario = ({ usuario }) => {
     estadoUsuario: usuario.estadoUsuario,
     modificarProducto: usuario.modificarProducto,
     añadirProducto: usuario.añadirProducto,
-    modificarUsuario: usuario.añadirUsuario,
+    modificarUsuario: usuario.modificarUsuario,
     modificarVenta: usuario.modificarVenta,
   });
 
@@ -182,7 +182,7 @@ const FilaUsuario = ({ usuario }) => {
         estadoUsuario: infoNuevoUsuario.estadoUsuario,
         modificarProducto: infoNuevoUsuario.modificarProducto,
         añadirProducto: infoNuevoUsuario.añadirProducto,
-        modificarUsuario: infoNuevoUsuario.añadirUsuario,
+        modificarUsuario: infoNuevoUsuario.modificarUsuario,
         modificarVenta: infoNuevoUsuario.modificarVenta,
       },
       (response) => {
