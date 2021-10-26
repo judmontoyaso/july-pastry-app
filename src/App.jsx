@@ -32,7 +32,7 @@ function App() {
     <Auth0Provider
       domain="julypastry.us.auth0.com"
       clientId="RP3pDTrISwYtoGFR2X7Zm4MQpBX2zoGx"
-      redirectUri="http://localhost:3000/tablaventas"
+      redirectUri="https://radiant-beyond-55605.herokuapp.com//tablaventas"
       audience="api-autenticacion-julyspastry"
     >
       <div>
