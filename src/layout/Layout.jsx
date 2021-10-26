@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         (err) => {
           console.log("err", err);
           setLoadingUserInformation(false);
-          logout({ returnTo: 'http://localhost:3000/admin' });
+          logout({ returnTo: 'https://radiant-beyond-55605.herokuapp.com/panel' });
         }
       );
     };
