@@ -32,7 +32,7 @@ function App() {
     <Auth0Provider
       domain="julypastry.us.auth0.com"
       clientId="RP3pDTrISwYtoGFR2X7Zm4MQpBX2zoGx"
-      redirectUri="https://judmontoyaso-symmetrical-doodle-w4qwvvjwvxg3qgg-3000.preview.app.github.dev/panel"
+      redirectUri="https://july-pastry-app.vercel.app/panel"
       audience="api-autenticacion-julyspastry"
     >
       <div>
