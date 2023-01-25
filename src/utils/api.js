@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://api-julypastry.vercel.app/"
+const baseURL = "https://api-julypastry.vercel.app"
 
 const getToken = () => {
   return `Bearer ${localStorage.getItem("token")}`;

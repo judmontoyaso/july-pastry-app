@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         (err) => {
           console.log("err", err);
           setLoadingUserInformation(false);
-          logout({ returnTo: 'https://july-pastry-app.vercel.app/panel' });
+         // logout({ returnTo: 'https://july-pastry-app.vercel.app/' });
         }
       );
     };
