@@ -66,6 +66,7 @@ const Layout = ({ children }) => {
   }
 
   return (
+    <>
     <div className="flex w-screen">
       <div className="flex flex-col md:flex-row flex-nowrap h-full w-full">
         <Sidebar />
@@ -73,7 +74,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </RutaAsignada>
       </div>
-    </div>
+    </div></>
   );
 };
 
