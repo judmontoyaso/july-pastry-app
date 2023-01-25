@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         (err) => {
           console.log("err", err);
           setLoadingUserInformation(false);
-          logout({ returnTo: 'https://radiant-beyond-55605.herokuapp.com/panel' });
+          logout({ returnTo: 'https://july-pastry-app.vercel.app/panel' });
         }
       );
     };
