@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "api-julypastry-production.up.railway.app"
+const baseURL = "https://api-julypastry-production.up.railway.app"
 
 const getToken = () => {
   return `Bearer ${localStorage.getItem("token")}`;
